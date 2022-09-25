@@ -1,0 +1,24 @@
+import { system, SystemConfig } from '@andideve/sx-core';
+import { FlexboxProps } from './types';
+
+const config: SystemConfig<FlexboxProps> = {
+  alignItems: true,
+  alignContent: true,
+  justifyItems: true,
+  justifyContent: true,
+  flexWrap: true,
+  flexDirection: true,
+  // item
+  flex: true,
+  flexGrow: true,
+  flexShrink: true,
+  flexBasis: true,
+  justifySelf: true,
+  alignSelf: true,
+  order: true,
+};
+
+export const flexbox = system(config);
+
+export { FlexboxProps };
+export default flexbox;
